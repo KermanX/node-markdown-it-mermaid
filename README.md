@@ -1,12 +1,12 @@
-# markdown-it-mermaid
+# node-markdown-it-mermaid
 
-Mermaid plugin for markdown-it.
+Node-mermaid plugin for markdown-it.
 
 
 ## Installation
 
 ```
-yarn install markdown-it-mermaid
+npm install node-markdown-it-mermaid
 ```
 
 
@@ -14,9 +14,9 @@ yarn install markdown-it-mermaid
 
 ```js
 import markdownIt from 'markdown-it'
-import markdownItMermaid from 'markdown-it-mermaid'
+import nodeMarkdownItMermaid from 'node-markdown-it-mermaid'
 const mdi = markdownIt()
-mdi.use(markdownItMermaid)
+mdi.use(nodeMarkdownItMermaid)
 mdi.render(`\`\`\`mermaid
 graph TD
     A[Christmas] -->|Get money| B(Go shopping)
@@ -48,29 +48,3 @@ You can `loadPreferences` from any preferences store as long as it supports the 
 `mdi.mermaid.loadPreferences` not only applies the preferences, it also return the preferences loaded. Just in case you need to access the loaded preferences.
 
 `mdi.mermaid.loadPreferences` could be invoked multiple times. And the preferences applied later will override ones applied earlier.
-
-
-## Development
-
-### Build
-
-```
-yarn build:watch
-```
-
-### Test
-
-```
-yarn test
-```
-
-### Distribution
-
-```
-yarn release && npm publish
-```
-
-
-## Todo
-
-`gantt-axis-format` should support large date ranges
