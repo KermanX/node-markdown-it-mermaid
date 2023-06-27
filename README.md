@@ -1,3 +1,5 @@
+> **This repo is archived, because I found it technically impossible to run mermaid synchronously as a MarkdownIt plugin. So I will write a Rollup/Vite plugin to render mermaid in comptime.**
+
 # node-markdown-it-mermaid
 
 Node-mermaid plugin for markdown-it.
